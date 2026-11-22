@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Naveen Narayanan — Senior Business Intelligence & Data Analyst. BI leadership, Power BI, SQL, Snowflake, Azure Data Factory and enterprise analytics.">
+<meta name="theme-color" content="#0b1220">
+<title>Naveen Narayanan | BI & Data Analytics Portfolio</title>
+<style>
+:root{--bg:#09111f;--surface:#101d30;--surface2:#14243a;--ink:#eef4fb;--muted:#a9b8cb;--line:rgba(255,255,255,.12);--teal:#69dbc5;--blue:#91b8ff;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:radial-gradient(ellipse at 80% 0%,#17324b 0,transparent 34%),var(--bg);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(9,17,31,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:850;letter-spacing:.04em}.brand b{color:var(--teal)}
+.navlinks{display:flex;gap:22px;align-items:center}.navlinks a{font-size:.9rem;color:var(--muted);text-decoration:none}.navlinks a:hover{color:var(--teal)}
+.nav-cta{border:1px solid var(--line);padding:8px 13px;border-radius:9px}
+.hero{padding:92px 0 76px;display:grid;grid-template-columns:1.45fr .75fr;gap:58px;align-items:center}
+.kicker{color:var(--teal);font-size:.76rem;letter-spacing:.17em;text-transform:uppercase;font-weight:800}
+h1{font-size:clamp(2.8rem,6.2vw,5.5rem);line-height:.99;letter-spacing:-.065em;margin:18px 0 24px}
+h1 em{font-style:normal;color:var(--teal)}.lead{font-size:1.13rem;color:#c4d0df;max-width:720px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 17px;border-radius:10px;border:1px solid var(--line);text-decoration:none;font-weight:750;transition:.2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--teal)}.btn.primary{background:var(--teal);color:#071521;border-color:var(--teal)}
+.hero-panel{padding:27px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(105,219,197,.12),rgba(145,184,255,.07));box-shadow:0 20px 60px rgba(0,0,0,.18)}
+.hero-panel .years{font-size:3.8rem;line-height:1;font-weight:850;color:var(--teal);letter-spacing:-.06em}.hero-panel p{color:var(--muted);margin:8px 0 20px}
+.panel-row{padding-top:15px;margin-top:15px;border-top:1px solid var(--line)}.panel-row small{display:block;color:var(--muted)}
+section{padding:76px 0;border-top:1px solid var(--line)}.section-top{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.08;letter-spacing:-.05em;margin:8px 0 0}.section-note{max-width:490px;color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.card{border:1px solid var(--line);background:linear-gradient(145deg,var(--surface),#0e192a);border-radius:16px;padding:23px}
+.card h3{font-size:1.13rem;margin:0 0 8px}.card p{color:var(--muted);margin:0}
+.card-top{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:15px}
+.iconbox{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(105,219,197,.12);color:var(--teal);font-weight:850}
+.label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);font-weight:800}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.tag{font-size:.8rem;color:#d7e3f0;border:1px solid var(--line);background:var(--surface2);padding:5px 10px;border-radius:999px}
+.case{display:flex;flex-direction:column;min-height:100%}.case .result{font-size:2rem;font-weight:850;letter-spacing:-.05em;color:var(--teal);margin:16px 0 0}.case .result-caption{font-size:.85rem;color:var(--muted)}
+.case ul{padding-left:18px;color:#c4d0df;margin:14px 0 0}.case li{margin:5px 0}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.project-visual{height:150px;border-radius:12px;margin-bottom:17px;padding:15px;display:flex;align-items:end;overflow:hidden;position:relative;background:linear-gradient(135deg,#193d51,#14253c)}
+.project-visual:before{content:"";position:absolute;width:150px;height:150px;border:1px solid rgba(105,219,197,.32);border-radius:50%;right:-22px;top:-54px;box-shadow:0 0 0 18px rgba(105,219,197,.05),0 0 0 38px rgba(105,219,197,.035)}
+.visual-label{position:relative;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:#bcefe5;font-weight:800}
+.mini-bars{position:absolute;right:25px;bottom:20px;display:flex;align-items:end;gap:6px;height:74px}
+.mini-bars i{display:block;width:13px;background:linear-gradient(#69dbc5,#3c8e99);border-radius:4px 4px 0 0}
+.visual-dashboard{background:linear-gradient(135deg,#183b4a,#182742)}
+.visual-pipeline{background:linear-gradient(135deg,#26385a,#142238)}
+.visual-model{background:linear-gradient(135deg,#244a47,#142b35)}
+.visual-retail{background:linear-gradient(135deg,#493a60,#1b2540)}
+.timeline{border-left:2px solid rgba(105,219,197,.4);padding-left:25px}.timeline-item{position:relative;padding:0 0 26px}.timeline-item:before{content:"";position:absolute;left:-32px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 5px rgba(105,219,197,.1)}
+.date{color:var(--teal);font-weight:750;font-size:.86rem}.timeline-item h3{margin:4px 0}.timeline-item p,.timeline-item li{color:#c4d0df}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.metric{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}.metric strong{font-size:2.2rem;color:var(--teal);display:block;line-height:1.15;letter-spacing:-.05em}.metric span{color:var(--muted);font-size:.88rem}
+.cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.cert{padding:17px;border:1px solid var(--line);border-radius:13px;background:var(--surface)}.cert b{display:block;font-size:.94rem}.cert span{font-size:.83rem;color:var(--muted)}
+.contact-box{padding:34px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(120deg,rgba(105,219,197,.12),rgba(145,184,255,.08))}
+.contact-box p{color:var(--muted);max-width:700px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.86rem;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){.hero{grid-template-columns:1fr;gap:30px;padding:65px 0}.gallery{grid-template-columns:repeat(2,1fr)}.metrics,.cert-grid{grid-template-columns:repeat(2,1fr)}.section-top{display:block}.section-note{margin-top:14px}}
+@media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 30px))}nav{height:auto;min-height:68px;align-items:flex-start;flex-direction:column;padding:15px 0}.navlinks{gap:13px;flex-wrap:wrap}.navlinks a{font-size:.82rem}.nav-cta{display:none}.grid,.gallery,.metrics,.cert-grid{grid-template-columns:1fr}section{padding:58px 0}footer{display:block}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <div class="brand">NAVEEN <b>NARAYANAN</b></div>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#work">Case studies</a><a href="#gallery">Gallery</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <a class="nav-cta" href="naveen_narayanan_resume.pdf" download>Download resume ↓</a>
+  </div>
+</nav></div></header>
+<main>
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <div class="kicker">Senior Business Intelligence & Data Analytics</div>
+      <h1>Data that moves<br><em>business forward.</em></h1>
+      <p class="lead">I build enterprise BI and analytics solutions that turn complex data into clear decisions. With 13+ years across business intelligence, data engineering, cloud platforms, and team leadership, I connect business needs with practical technology.</p>
+      <div class="actions">
+        <a class="btn primary" href="#work">Explore selected work ↗</a>
+        <a class="btn" href="naveen_narayanan_resume.pdf" download>Download resume ↓</a>
+        <a class="btn" href="https://www.linkedin.com/in/naveen-narayanan-vikkiramanarayanan-b7063763/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+    <aside class="hero-panel">
+      <div class="years">13+</div><b>Years of BI & analytics experience</b>
+      <p>Enterprise reporting · Data platforms · Analytics delivery</p>
+      <div class="panel-row"><b>Current role</b><small>Senior Business Intelligence & Data Analyst · Wipro</small></div>
+      <div class="panel-row"><b>Location</b><small>New Westminster, British Columbia, Canada</small></div>
+      <div class="panel-row"><b>Focus</b><small>BI leadership, Power BI, SQL, Snowflake, Azure Data Factory</small></div>
+    </aside>
+  </div>
+
+  <section id="about">
+    <div class="section-top"><div><div class="kicker">Profile</div><h2>Business-focused.<br>Technically grounded.</h2></div><p class="section-note">I enjoy bridging business and technology: understanding the challenge, shaping a dependable data solution, and helping teams turn trusted information into better decisions.</p></div>
+    <div class="grid">
+      <article class="card"><h3>What I bring</h3><p>End-to-end experience across requirements, data integration, dimensional modeling, semantic layers, dashboards, platform modernization, and production support.</p></article>
+      <article class="card"><h3>How I work</h3><p>Collaborative delivery with business stakeholders and technical teams, backed by Agile practices, developer mentoring, practical problem-solving, and attention to data quality.</p></article>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <div class="section-top"><div><div class="kicker">Capabilities</div><h2>Technology & expertise</h2></div><p class="section-note">A broad BI toolkit spanning reporting, integration, data warehousing, cloud analytics, and technical leadership.</p></div>
+    <div class="grid">
+      <article class="card"><div class="card-top"><div class="iconbox">BI</div><span class="label">Analytics</span></div><h3>Business intelligence & visualization</h3><p>Enterprise dashboards, DAX, Power Query, semantic models, KPI design, self-service reporting, and performance tuning.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Power Query (M)</span><span class="tag">SSRS</span><span class="tag">SSAS</span></div></article>
+      <article class="card"><div class="card-top"><div class="iconbox">ETL</div><span class="label">Data engineering</span></div><h3>Data integration & pipelines</h3><p>ETL/ELT development, orchestration, transformations, data validation, and pipeline optimization.</p><div class="tags"><span class="tag">SSIS</span><span class="tag">Azure Data Factory</span><span class="tag">SQL</span><span class="tag">Python</span></div></article>
+      <article class="card"><div class="card-top"><div class="iconbox">DB</div><span class="label">Platforms</span></div><h3>Data platforms & warehousing</h3><p>Enterprise data modeling, star schemas, cloud analytics, and scalable data platforms.</p><div class="tags"><span class="tag">SQL Server</span><span class="tag">Snowflake</span><span class="tag">Teradata</span><span class="tag">Oracle</span><span class="tag">Microsoft Fabric</span><span class="tag">Databricks</span><span class="tag">AWS Redshift</span><span class="tag">GCP</span></div></article>
+      <article class="card"><div class="card-top"><div class="iconbox">LEAD</div><span class="label">Leadership</span></div><h3>Team & delivery leadership</h3><p>BI team leadership, technical mentoring, stakeholder management, delivery planning, and Agile/Scrum collaboration.</p><div class="tags"><span class="tag">Agile / Scrum</span><span class="tag">Team mentoring</span><span class="tag">Stakeholder partnership</span><span class="tag">BI modernization</span></div></article>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="section-top"><div><div class="kicker">Selected work</div><h2>Case studies</h2></div><p class="section-note">Representative outcomes from enterprise BI and analytics initiatives. Project descriptions are generalized to protect business-sensitive information.</p></div>
+    <div class="grid">
+      <article class="card case">
+        <div class="card-top"><div class="iconbox">01</div><span class="label">BI modernization</span></div>
+        <h3>Legacy SSRS to Power BI migration</h3>
+        <p>Modernized a legacy reporting environment by migrating operational and business reports to Power BI, introducing reusable data models and improving report usability.</p>
+        <ul><li>Migrated 75 SSRS reports to Power BI.</li><li>Supported developer knowledge transfer and onboarding.</li><li>Improved report performance and inventory visibility.</li></ul>
+        <div class="result">75 reports</div><div class="result-caption">Migrated from SSRS to Power BI</div>
+        <div class="tags"><span class="tag">Power BI</span><span class="tag">SSRS</span><span class="tag">Star schema</span><span class="tag">SQL</span></div>
+      </article>
+      <article class="card case">
+        <div class="card-top"><div class="iconbox">02</div><span class="label">Cloud data engineering</span></div>
+        <h3>Data pipeline performance improvement</h3>
+        <p>Improved data pipeline execution across Azure Data Factory and Snowflake by reviewing transformation steps, query patterns, and processing workflows.</p>
+        <ul><li>Optimized pipeline and SQL execution.</li><li>Improved reliability and operational efficiency.</li><li>Reduced processing time for downstream analytics.</li></ul>
+        <div class="result">35%</div><div class="result-caption">Reported improvement in pipeline runtime</div>
+        <div class="tags"><span class="tag">Azure Data Factory</span><span class="tag">Snowflake</span><span class="tag">SQL</span></div>
+      </article>
+      <article class="card case">
+        <div class="card-top"><div class="iconbox">03</div><span class="label">Self-service analytics</span></div>
+        <h3>Enterprise Power BI reporting platform</h3>
+        <p>Developed and supported a shared Power BI reporting environment that made business information more accessible and encouraged self-service analytics.</p>
+        <ul><li>Enabled reporting for 200+ business users.</li><li>Improved self-service reporting adoption.</li><li>Created consistent dashboards and reusable reporting practices.</li></ul>
+        <div class="result">200+</div><div class="result-caption">Users supported on the BI platform</div>
+        <div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Data modeling</span></div>
+      </article>
+      <article class="card case">
+        <div class="card-top"><div class="iconbox">04</div><span class="label">Retail analytics</span></div>
+        <h3>Inventory and operational insights</h3>
+        <p>Delivered reporting and analytics to improve visibility into inventory, sales operations, and backlog, helping stakeholders prioritize operational actions.</p>
+        <ul><li>Contributed to a 40% improvement in inventory adoption.</li><li>Helped reduce backlog by 20%.</li><li>Supported inventory visibility and process improvements.</li></ul>
+        <div class="result">40% / 20%</div><div class="result-caption">Inventory adoption improvement / backlog reduction</div>
+        <div class="tags"><span class="tag">Retail analytics</span><span class="tag">Power BI</span><span class="tag">SQL</span></div>
+      </article>
+      <article class="card case">
+        <div class="card-top"><div class="iconbox">05</div><span class="label">Data modeling</span></div>
+        <h3>Product catalog history and planning</h3>
+        <p>Implemented product catalog history using Type 3 slowly changing dimension techniques to support planning and analysis of product changes and seasonal opportunities.</p>
+        <ul><li>Designed historical attribute tracking.</li><li>Enabled analysis for catalog and seasonal planning.</li><li>Supported a business initiative associated with a projected $2M holiday revenue opportunity.</li></ul>
+        <div class="result">$2M</div><div class="result-caption">Projected holiday revenue opportunity supported</div>
+        <div class="tags"><span class="tag">SCD Type 3</span><span class="tag">Data warehousing</span><span class="tag">SQL</span></div>
+      </article>
+      <article class="card case">
+        <div class="card-top"><div class="iconbox">06</div><span class="label">Team leadership</span></div>
+        <h3>BI delivery and developer enablement</h3>
+        <p>Led day-to-day BI delivery while supporting team growth through technical mentoring, onboarding, and consistent development practices.</p>
+        <ul><li>Led a six-person Agile BI team.</li><li>Trained four SSRS developers during reporting modernization.</li><li>Onboarded two BI engineers and shared development standards.</li></ul>
+        <div class="result">6-person</div><div class="result-caption">Agile BI team leadership experience</div>
+        <div class="tags"><span class="tag">Team leadership</span><span class="tag">Mentoring</span><span class="tag">Agile</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="section-top"><div><div class="kicker">Project gallery</div><h2>Work themes at a glance</h2></div><p class="section-note">Conceptual visuals representing the types of solutions delivered. These are illustrative, not screenshots of client systems or confidential dashboards.</p></div>
+    <div class="gallery">
+      <article class="card"><div class="project-visual visual-dashboard"><span class="visual-label">Executive BI dashboard</span><div class="mini-bars"><i style="height:35%"></i><i style="height:62%"></i><i style="height:48%"></i><i style="height:83%"></i><i style="height:100%"></i></div></div><h3>Performance reporting</h3><p>KPIs, trends, drill-down analysis, and decision-ready dashboards.</p></article>
+      <article class="card"><div class="project-visual visual-pipeline"><span class="visual-label">ETL / ELT pipeline</span><div class="mini-bars"><i style="height:48%"></i><i style="height:72%"></i><i style="height:58%"></i><i style="height:88%"></i></div></div><h3>Data integration</h3><p>Reliable ingestion, transformation, orchestration, and validation.</p></article>
+      <article class="card"><div class="project-visual visual-model"><span class="visual-label">Dimensional model</span><div class="mini-bars"><i style="height:30%"></i><i style="height:54%"></i><i style="height:78%"></i><i style="height:92%"></i></div></div><h3>Analytics data models</h3><p>Star schemas, semantic layers, and reusable business logic.</p></article>
+      <article class="card"><div class="project-visual visual-retail"><span class="visual-label">Retail intelligence</span><div class="mini-bars"><i style="height:62%"></i><i style="height:40%"></i><i style="height:82%"></i><i style="height:68%"></i></div></div><h3>Retail & inventory insights</h3><p>Sales, product, inventory, and operational performance analysis.</p></article>
+      <article class="card"><div class="project-visual visual-pipeline"><span class="visual-label">Cloud analytics</span><div class="mini-bars"><i style="height:40%"></i><i style="height:70%"></i><i style="height:90%"></i></div></div><h3>Cloud data platforms</h3><p>Modern analytics patterns using Azure, Snowflake, and Databricks.</p></article>
+      <article class="card"><div class="project-visual visual-dashboard"><span class="visual-label">Team delivery</span><div class="mini-bars"><i style="height:54%"></i><i style="height:76%"></i><i style="height:66%"></i><i style="height:94%"></i></div></div><h3>BI team enablement</h3><p>Technical mentoring, shared practices, and Agile delivery leadership.</p></article>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-top"><div><div class="kicker">Career</div><h2>Professional experience</h2></div><p class="section-note">A career built around enterprise business intelligence, data analytics, and delivery across Canada, the United States, and India.</p></div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="date">May 2022 – Present · Canada</div><h3>Senior Business Intelligence & Data Analyst — Wipro</h3><ul><li>Lead BI initiatives and deliver enterprise reporting and analytics solutions.</li><li>Develop Power BI dashboards, data models, and end-to-end data pipelines.</li><li>Work with SQL Server, SSIS, SSRS, Azure Data Factory, Snowflake, and modern cloud platforms.</li><li>Lead and mentor BI developers, collaborate with stakeholders, and support Agile delivery.</li></ul></div>
+      <div class="timeline-item"><div class="date">April 2016 – May 2022 · United States</div><h3>BI and Data Analytics Engineer</h3><p>Delivered business intelligence, data analytics, reporting, and data engineering solutions in enterprise environments.</p></div>
+      <div class="timeline-item"><div class="date">December 2012 – April 2016 · India</div><h3>Business Intelligence Developer</h3><p>Built a foundation in BI development, SQL, ETL, data warehousing, and enterprise reporting.</p></div>
+    </div>
+  </section>
+
+  <section id="impact">
+    <div class="section-top"><div><div class="kicker">Outcomes</div><h2>Selected results</h2></div><p class="section-note">Illustrative career achievements based on reported project outcomes; individual results depend on project scope and business context.</p></div>
+    <div class="metrics">
+      <div class="metric"><strong>75</strong><span>SSRS reports migrated to Power BI</span></div>
+      <div class="metric"><strong>200+</strong><span>Users supported through a Power BI platform</span></div>
+      <div class="metric"><strong>35%</strong><span>Data pipeline runtime improvement</span></div>
+      <div class="metric"><strong>60%</strong><span>Reported performance improvement in a BI modernization initiative</span></div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="section-top"><div><div class="kicker">Credentials</div><h2>Certifications</h2></div><p class="section-note">Professional credentials across BI, data platforms, and cloud technologies.</p></div>
+    <div class="cert-grid">
+      <div class="cert"><b>Teradata Certified Professional</b><span>Teradata</span></div>
+      <div class="cert"><b>Power BI Certified</b><span>Microsoft Power BI</span></div>
+      <div class="cert"><b>Databricks Certified Data Analyst Associate</b><span>Databricks</span></div>
+      <div class="cert"><b>Google Cloud credentials</b><span>Google Cloud Platform</span></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-box">
+      <div class="kicker">Get in touch</div><h2>Let’s connect.</h2>
+      <p>Open to connecting with BI, data analytics, and data engineering professionals and discussing opportunities where enterprise data can make a measurable difference.</p>
+      <div class="actions"><a class="btn primary" href="https://www.linkedin.com/in/naveen-narayanan-vikkiramanarayanan-b7063763/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a><a class="btn" href="naveen_narayanan_resume.pdf" download>Download resume ↓</a></div>
+    </div>
+  </section>
+</div>
+</main>
+<footer class="wrap"><span>© 2026 Naveen Narayanan · Professional portfolio</span><span>Built around BI, analytics & data leadership</span></footer>
+</body></html>
